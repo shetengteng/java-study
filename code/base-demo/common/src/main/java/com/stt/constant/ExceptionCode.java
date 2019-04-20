@@ -12,6 +12,8 @@ public class ExceptionCode {
 
 	public static final int FILE_EXISTS_ERROR = 50200;
 	public static final int FILE_MKDIRS_ERROR = 50201;
+	public static final int FILE_CREATE_ERROR = 50202;
+	public static final int FILE_DELETE_ERROR = 50203;
 
 	public static final int COMPILE_FAIL = 500300;
 }

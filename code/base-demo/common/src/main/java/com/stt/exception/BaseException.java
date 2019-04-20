@@ -1,14 +1,11 @@
 package com.stt.exception;
 
 import com.stt.constant.ExceptionCode;
-import lombok.Getter;
-import lombok.ToString;
-import org.springframework.http.HttpStatus;
 /**
+ * this not use lombok to avoid when project doing dynamic
+ * complie java file throw lombok exception
  * Created by Administrator on 2019/1/31.
  */
-@Getter
-@ToString
 public class BaseException extends RuntimeException {
 
 	private int code;
@@ -32,4 +29,12 @@ public class BaseException extends RuntimeException {
 		}
 	}
 
+	public int getCode(){return code;}
+
+	@Override
+	public String toString() {
+		return "BaseException{" +
+				"code=" + code +
+				'}';
+	}
 }
