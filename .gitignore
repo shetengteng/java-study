@@ -21,6 +21,7 @@
 *.iml
 *.ipr
 *.class
+*.pdf
 
 ### NetBeans ###
 /nbproject/private/
