@@ -9,6 +9,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class Ch05_ReentrantLockDemo {
 
 	int a = 0;
+	// 默认使用非公平锁
 	ReentrantLock lock = new ReentrantLock();
 	public void read(){
 		lock.lock();
