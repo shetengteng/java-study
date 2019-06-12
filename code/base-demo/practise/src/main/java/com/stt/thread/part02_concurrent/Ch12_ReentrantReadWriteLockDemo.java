@@ -1,4 +1,4 @@
-package com.stt.thread.part01_base;
+package com.stt.thread.part02_concurrent;
 
 import java.util.HashMap;
 import java.util.Map;
