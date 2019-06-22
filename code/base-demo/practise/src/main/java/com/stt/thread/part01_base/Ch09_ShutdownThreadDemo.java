@@ -1,5 +1,6 @@
 package com.stt.thread.part01_base;
 
+import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 
 /**
