@@ -1,24 +1,5 @@
-﻿##   本单元目标
-	 五、DQL语言的学习   ★              
-		基础查询        ★             
-		条件查询  	   ★			
-		排序查询  	   ★				
-		常见函数        ★               
-		分组函数        ★              
-		分组查询		   ★			
-		连接查询	 	★			
-		子查询       √                  
-		分页查询       ★              
-		union联合查询	√			
-		
-	六、DML语言的学习    ★             
-		插入语句						
-		修改语句						
-		删除语句						
-	七、DDL语言的学习  
-		库和表的管理	 √				
-		常见数据类型介绍  √          
-		常见约束  	  √			
+﻿##   本单元目
+			
 	八、TCL语言的学习
 		事务和事务处理                 
 	九、视图的讲解           √
@@ -27,18 +8,18 @@
 	十二、流程控制结构       
 
 
-	
-	
-	
-	SQL的语言分类
+​	
+​	
+​	
+​	SQL的语言分类
+​	
+​	DML(Data Manipulate Language):数据操作语言
+​		insert 、update、delete
+​	DDL（Data Define Languge）：数据定义语言
+​		create、drop、alter
+​	TCL（Transaction Control Language）：事务控制语言
+​		commit、rollback
 
-	DML(Data Manipulate Language):数据操作语言
-		insert 、update、delete
-	DDL（Data Define Languge）：数据定义语言
-		create、drop、alter
-	TCL（Transaction Control Language）：事务控制语言
-		commit、rollback
-	
 
 
 
@@ -119,8 +100,7 @@
 ​		upper转换成大写
 ​		lower转换成小写
 ​		trim去前后指定的空格和字符
-​		ltrim去左边空格
-​		rtrim去右边空格
+
 ​		replace替换
 ​		lpad左填充
 ​		rpad右填充
@@ -407,16 +387,16 @@ sql92
 ​	#2.修改表 alter
 ​	语法：ALTER TABLE 表名 ADD|MODIFY|DROP|CHANGE COLUMN 字段名 【字段类型】;
 ​	
-	#①修改字段名
-	ALTER TABLE studentinfo CHANGE  COLUMN sex gender CHAR;
-	
-	#②修改表名
-	ALTER TABLE stuinfo RENAME [TO]  studentinfo;
-	#③修改字段类型和列级约束
-	ALTER TABLE studentinfo MODIFY COLUMN borndate DATE ;
-	
-	#④添加字段
-	
+​	#①修改字段名
+​	ALTER TABLE studentinfo CHANGE  COLUMN sex gender CHAR;
+​	
+​	#②修改表名
+​	ALTER TABLE stuinfo RENAME [TO]  studentinfo;
+​	#③修改字段类型和列级约束
+​	ALTER TABLE studentinfo MODIFY COLUMN borndate DATE ;
+​	
+​	#④添加字段
+​	
 	ALTER TABLE studentinfo ADD COLUMN email VARCHAR(20) first;
 	#⑤删除字段
 	ALTER TABLE studentinfo DROP COLUMN email;
@@ -587,12 +567,12 @@ sql92
 ​	AS
 ​	SELECT employee_id FROM employees;
 ​	
-	SELECT * FROM test_v7;
+​	SELECT * FROM test_v7;
 ###视图的删除
-	DROP VIEW test_v1,test_v2,test_v3;
+​	DROP VIEW test_v1,test_v2,test_v3;
 ###视图结构的查看	
-	DESC test_v7;
-	SHOW CREATE VIEW test_v7;
+​	DESC test_v7;
+​	SHOW CREATE VIEW test_v7;
 
 ##存储过程
 
