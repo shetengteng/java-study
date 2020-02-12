@@ -11,7 +11,7 @@ public class Ch01_DeadLockDemo {
 	private static final String lock1 = "lock1";
 	private static final String lock2 = "lock2";
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// 线程1
 		Thread t1 = new Thread(new Runnable() {
 			@Override
@@ -44,7 +44,6 @@ public class Ch01_DeadLockDemo {
 		});
 		t1.start();
 		t2.start();
-
 	}
 
 }
