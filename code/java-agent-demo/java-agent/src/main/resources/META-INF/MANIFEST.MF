@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Premain-Class: com.stt.demo.TestAgent
+Agent-Class: com.stt.demo.RuntimeAgent
